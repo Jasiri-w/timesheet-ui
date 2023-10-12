@@ -1,0 +1,275 @@
+/*Customised Color Scheme
+Red:#e60000
+Blue:#3399ff
+Green:#00cc66
+*/
+
+
+#cards{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: baseline;
+}
+#cards > a > div{
+	align-self:center;
+}
+#cards > a > div > span{
+	padding-top: 10px;	
+}
+
+#cards > a > div > span.glyphicon.glyphicon-plus-sign{
+	font-size: 40px;
+	position:relative;
+	left: 55px;
+	-webkit-transition: font-size 0.5s;
+	-moz-transition: font-size 0.5s;
+	-o-transition: font-size 0.5s;
+	transition: font-size 0.5s;
+}
+#cards > a > div > span.glyphicon.glyphicon-plus-sign:hover{
+	font-size: 45px;
+}
+#cards > a > div > span.glyphicon.glyphicon-ok-circle{
+	font-size: 40px;
+	position:relative;
+	left: 30px;
+	-webkit-transition: font-size 0.5s;
+	-moz-transition: font-size 0.5s;
+	-o-transition: font-size 0.5s;
+	transition: font-size 0.5s;
+}
+#cards > a > div > span.glyphicon.glyphicon-ok-circle:hover{
+	font-size: 45px;
+}
+#cards > a > div > span.glyphicon.glyphicon-time{
+	font-size: 40px;
+	position:relative;
+	left: 90px;
+	-webkit-transition: font-size 0.5s;
+	-moz-transition: font-size 0.5s;
+	-o-transition: font-size 0.5s;
+	transition: font-size 0.5s;
+}
+#cards > a > div > span.glyphicon.glyphicon-time:hover{
+	font-size: 45px;
+}
+
+#chart_div{
+	visibility: hidden;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	width: 100%;
+	background-color: rgba(239,239,239,0.1);
+}
+
+#belowcards{
+	margin: 30px 0px 50px 0px;
+	font-size: 16px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+#belowcards > div{
+	margin: 0px 10px;
+	padding: 3px 4px 3px 10px;
+	/*background-color: rgba(231,231,231,0.3);*/
+	/*-webkit-transition: margin-top 0.5s;
+	-moz-transition: margin-top 0.5s;
+	-o-transition: margin-top 0.5s;
+	transition: margin-top 0.5s;*/
+}
+/*#belowcards > div:hover{
+	margin-top: 10px;
+	background-color: white;
+}*/
+
+#appcard{
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+	background-color:rgba(0, 204, 102, 0.1);
+}
+#awappcard{
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+	background-color:rgba(51, 153, 255, 0.1);
+}
+#pendsubcard{
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+	background-color:rgba(230, 0, 0, 0.1);
+}
+
+
+.col-sm-5,.col-sm-6{
+	padding: 50px 30px;
+}
+
+/*th,td{
+	padding: 10px;
+}
+th{
+	background-color: #a7aeba;
+}
+table:{
+	border-collapse: collapse;
+}
+table#inbox tr:nth-child(even){
+	background-color: #eee;
+}
+table#inbox tr:nth-child(odd){
+	background-color: #fff;
+}
+table#inbox tr:first-child{
+	text-align: center;
+}*/
+#inbox-container{
+	visibility: hidden;
+}
+
+#sideBar{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	height: 800px;
+	-webkit-transition: margin 0.3s ease;
+    -moz-transition: margin 0.3s ease;
+    -o-transition: margin 0.3s ease;
+    transition: margin 0.3s ease;
+}
+#sideBar > a > div {
+	padding: 20px 0px;
+	-moz-transform: rotate(-90deg);
+}
+#sideBar > a > div::after{
+	font-family: "Glyphicons Halflings";
+	content: "\e114";
+	position: relative;
+	top: 40px;
+	right: 45px;
+	-webkit-transition: top 0.5s;
+}
+#sideBar > a > div:hover::after{
+	top: 50px;
+}
+
+#tooltip{
+	position: relative;
+	bottom: 100px;
+	right: 15px;
+}
+
+
+#panelcollapsearrow1 ,#panelcollapsearrow2{
+	-webkit-transition: -webkit-transform 0.3s ease;
+    -moz-transition: -moz-transform 0.3s ease;
+    -o-transition: -0-transform rotate 0.3s ease;
+    transition: transform rotate 0.3s ease;
+}
+.rotated{
+	-webkit-transform: rotate(180deg);
+}
+
+#alertbox{
+	position: fixed;
+	top: 50px;
+	left: 950px;
+	z-index: 9999;
+	visibility: hidden;
+}
+
+a:hover{
+	color: #72a8ff;
+	text-decoration: none;
+}
+
+.panel-heading > a:active, .panel-heading > a:visited{
+	text-decoration: none;
+}
+
+
+.linkicon{
+	position:relative;
+	top: 35px;
+	left: 60px;
+	font-size: 30px;
+	-webkit-transition: display 0.3s ease;
+	-moz-transition: display 0.3s ease;
+	-o-transition: display 0.3s ease;
+	transition: display 0.3s ease;
+}
+.hider{
+	background-color: #f1f1f1;
+}
+.noned{
+	display:none;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.col-sm-12{
+	-webkit-transition: box-shadow 1s;
+	-moz-transition: box-shadow 1s;
+	-o-transition: box-shadow 1s;
+	transition: box-shadow 1s;
+}
+.col-sm-12:hover{
+	box-shadow: 1px 1px 10px 3px rgba(149, 149, 149,0.1);
+}
+.collapsedrow {
+    display: block;
+	margin-right: 50px;
+    margin-left: -5%;
+}
+#colone/*,#coltwo*/{
+	-webkit-transition: width 0.3s ease;
+    -moz-transition: width 0.3s ease;
+    -o-transition: width 0.3s ease;
+    transition: width 0.3s ease;
+}
+
+
+#mainrow{
+	overflow-x: hidden;
+}
+
+#graphrow,#inboxrow,#notificationrow,#cardrow{
+	/*background-color: rgba(239, 239, 239, 0.1);*/
+}
+#graphrow{
+	margin-bottom: 10px;
+}
+
+footer {
+	background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .sidenav {
+		height: auto;
+		padding: 15px;
+		max-height: 300px;
+    }
+	#sideBar > a  > div{
+		-webkit-transform:rotate(0);
+	}
+	.row.content {
+		height:auto;
+	} 
+	.collapsed {
+        display: none;
+    }
+}
